@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<fragment-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:name="android.preference.PreferenceFragment"-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--tools:layout="@layout/activity_my" />-->
+
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.ranaahmed.SettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
