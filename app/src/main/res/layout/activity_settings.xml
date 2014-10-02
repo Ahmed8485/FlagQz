@@ -5,18 +5,23 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--<fragment-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:name="android.preference.PreferenceFragment"-->
-        <!--android:id="@+id/fragment"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--tools:layout="@layout/activity_my" />-->
 
+
+
+    <!--<fragment-->
+        <!--android:id="@+id/fragment1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:name="com.example.ranaahmed.flagqz.SettingsFragment"-->
+        <!--tools:layout="@layout/activity_settings" />-->
 
     <fragment
-        android:id="@+id/fragment1"
-        android:name="com.example.ranaahmed.SettingsFragment"
+        android:id="@+id/settingsFragment"
+        android:name="com.example.ranaahmed.flagqz.SettingsFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+
+        tools:layout="@android:layout/preference_category" />
+
+
 </LinearLayout>

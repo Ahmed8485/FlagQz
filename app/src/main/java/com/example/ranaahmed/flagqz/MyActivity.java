@@ -20,8 +20,8 @@ import java.util.Set;
 public class MyActivity extends Activity {
 
 
-    private static final String CHOICES = "pref_numberOfChoices";
-    private static final String REGIONS = "pref_regionsToInclude";
+    public static final String CHOICES = "pref_numberOfChoices";
+    public static final String REGIONS = "pref_regionsToInclude";
     private boolean phoneDevice = true;
     private boolean preferenceChanged = true;
 
@@ -99,7 +99,7 @@ public class MyActivity extends Activity {
             else if(key.equals(REGIONS)){
                 Set<String> regions = sharedPreferences.getStringSet(REGIONS,null);
                 if(regions != null && regions.size() >0){
-                    quizFragment.updateReqgions(sharedPreferences);
+                    quizFragment.updateRegions(sharedPreferences);
                     quizFragment.resetQuiz();
 
                 }
